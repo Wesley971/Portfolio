@@ -1,0 +1,39 @@
+
+.welcome-section {
+  text-align: center;
+  padding: 150px;
+  color: #D2B0E9;
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;   
+    text-align: center;
+
+  h1 {
+    font-size: 5rem;
+    
+  }
+  
+  p{
+    font-size: 3rem;
+    color: #555;
+    margin-bottom: 40px;
+  
+  }
+}
+
+.projects-section {
+  text-align: center;
+  h2{
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #3B3297;
+  }
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centrer les cartes horizontalement */
+}
+}

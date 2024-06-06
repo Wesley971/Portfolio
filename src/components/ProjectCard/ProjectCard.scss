@@ -1,0 +1,59 @@
+.project-card {
+    background: linear-gradient(135deg, #D2B0E9, #B551C7, #3B3297); /* Dégradé du violet au orange */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    padding: 20px; /* Espacement intérieur */
+    margin: 20px; /* Espacement extérieur pour séparer les cartes */
+    transition: transform 0.3s ease; /* Effet de transition pour l'animation */
+    text-align: center; /* Centrer le texte */
+    max-width: 400px; /* Largeur maximale pour garder les cartes uniformes */
+    width: 100%; /* Largeur par défaut */
+    flex-grow: 1; /* Permet à la carte de croître pour occuper l'espace disponible */
+    flex-basis: calc(33.333% - 40px); /* Largeur de base pour trois cartes par ligne, moins l'espacement */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.project-card img {
+    width: 100%; /* Image prend toute la largeur du conteneur */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 10px; /* Coins légèrement arrondis pour les images */
+}
+
+.project-card h3 {
+
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 1.4rem; /* Taille de police pour le titre */
+    margin: 10px 0; /* Espacement au-dessus et en dessous du titre */
+}
+
+.project-card p {
+   
+        font-family: "Courgette", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+    font-size: 1rem; /* Taille de police pour la description */
+    color: #555; /* Couleur de texte grise pour un contraste doux */
+    margin-bottom: 15px; /* Espacement au-dessous de la description */
+}
+
+.project-card a {
+    display: inline-block; /* Affichage en ligne pour le lien */
+    padding: 10px 20px; /* Espacement intérieur pour le lien */
+    background-color:#FBB7E0; /* Couleur de fond du lien */
+    color: #fff; /* Couleur de texte du lien */
+    border-radius: 5px; /* Coins arrondis pour le lien */
+    text-decoration: none; /* Pas de soulignement */
+    transition: background-color 0.3s ease; /* Effet de transition pour le changement de couleur */
+}
+
+.project-card a:hover {
+    background-color: #0056b3; /* Changement de couleur au survol */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
