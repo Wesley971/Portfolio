@@ -1,0 +1,22 @@
+.projects-section {
+    padding: 200px 0 200px 0 ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      font-family: "Sue Ellen Francisco", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 5rem;
+      color: #3B3297;
+    }
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Espacement entre les cartes */
+      justify-content: center; /* Centrer les cartes horizontalement */
+      width: 50%; /* Largeur de la grille */
+  }
+  }

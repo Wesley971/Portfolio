@@ -6,11 +6,12 @@
     margin: 20px; /* Espacement extérieur pour séparer les cartes */
     transition: transform 0.3s ease; /* Effet de transition pour l'animation */
     text-align: center; /* Centrer le texte */
-    max-width: 400px; /* Largeur maximale pour garder les cartes uniformes */
+    max-width: 600px; /* Largeur maximale pour garder les cartes uniformes */
     width: 100%; /* Largeur par défaut */
     flex-grow: 1; /* Permet à la carte de croître pour occuper l'espace disponible */
     flex-basis: calc(33.333% - 40px); /* Largeur de base pour trois cartes par ligne, moins l'espacement */
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    cursor: pointer; /* Curseur de la main pour indiquer que la carte est cliquable */
 }
 
 .project-card img {

@@ -1,16 +1,24 @@
-/* Header.css */
 .header {
-    background: linear-gradient(135deg, #9c5ca0, #B551C7, #3B3297); /* Dégradé du violet à l'orange puis au rouge */
-    color: rgb(252, 221, 255); /* Couleur du texte */
-    padding: 1rem;
+    background: linear-gradient(135deg,#0D0B2C , #B551C7, #3B3297); 
+    color: rgba(252, 221, 255, 0.9); /* Couleur du texte légèrement transparente */
+    padding: 15px 0 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Vibur", cursive;
     font-weight: 400;
     font-style: normal;
+    position: fixed; /* Fixer le header en haut */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+    transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
+    opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
 }
 
+.header:hover {
+    opacity: 0.6; /* Opacité à 100% lorsque le header est survolé */
+}
 
 .header .logo {
     font-size: 1.5rem;
@@ -31,16 +39,14 @@
 }
 
 .header nav ul li a {
-    color: rgb(252, 221, 255);
+    color: rgba(252, 221, 255, 0.9); /* Couleur du texte légèrement transparente */
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    
     transition: color 0.3s ease;
     font-family: "Vibur", cursive;
     position: relative;
 }
-
 
 .header nav ul li a::after {
     content: '';
@@ -57,4 +63,3 @@
 .header nav ul li a:hover::after {
     width: 100%;
 }
-

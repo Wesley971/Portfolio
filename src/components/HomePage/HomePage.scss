@@ -1,39 +1,74 @@
-
+/* Styles pour la section de bienvenue */
 .welcome-section {
   text-align: center;
   padding: 150px;
   color: #D2B0E9;
-    font-family: "Sue Ellen Francisco", cursive;
-    font-weight: 400;
-    font-style: normal;   
-    text-align: center;
-
-  h1 {
-    font-size: 5rem;
-    
-  }
-  
-  p{
-    font-size: 3rem;
-    color: #555;
-    margin-bottom: 40px;
-  
-  }
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;   
 }
 
-.projects-section {
+.welcome-section h1 {
+  font-size: 5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.welcome-section p {
+  font-size: 3rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Styles pour la section de présentation */
+.about-section {
+  background-color: #070717; 
+  padding: 20px 0 200px 0;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Sue Ellen Francisco", cursive; /* Utilisation de la même police pour la cohérence */
+  font-weight: 400;
+  font-style: normal;
+  color: #3B3297;
   text-align: center;
-  h2{
-    font-family: "Sue Ellen Francisco", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-    color: #3B3297;
-  }
-  .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacement entre les cartes */
-    justify-content: center; /* Centrer les cartes horizontalement */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
+.about-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white; /* Utilisation de la même couleur pour la cohérence */
+}
+
+.about-section p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+  width: 70%;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
 }
