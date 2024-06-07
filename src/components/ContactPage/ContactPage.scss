@@ -1,0 +1,120 @@
+/* Styles pour la page de contact */
+.contact-page {
+    background: linear-gradient(
+      135deg,
+      rgba(13, 11, 44, 0.5),
+      rgba(181, 81, 199, 0.5),
+      rgba(59, 50, 151, 0.5)
+    );
+    color: #d2b0e9;
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px; /* Espacement interne pour donner de l'air au contenu */
+    position: relative;
+    top: 300px;
+  }
+  
+  .contact-section {
+    text-align: center;
+    max-width: 1200px; /* Augmentation de la largeur maximale */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .contact-section p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .contact-section a {
+    color: #d2b0e9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-section a:hover {
+    color: #b551c7;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre le formulaire et l'image */
+  }
+  
+  .contact-form {
+    background-color: rgba(59, 50, 151, 0.9); /* Augmentation de l'opacité pour rendre le formulaire plus visible */
+    padding: 40px; /* Augmentation de l'espacement interne */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre pour un effet de profondeur */
+    border: 2px solid #d2b0e9; /* Ajout d'une bordure pour améliorer la visibilité */
+    width: 100%; /* Le formulaire prend toute la largeur disponible */
+    max-width: 600px; /* Limite la largeur maximale du formulaire */
+    flex-shrink: 0; /* Empêche le formulaire de rétrécir */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d2b0e9;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d2b0e9;
+  }
+  
+  button {
+    background-color: #d2b0e9;
+    color: #070717;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b551c7;
+  }
+  
+  .contact-image {
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+  }
+  
+  .contact-image img {
+    max-width: 300px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
