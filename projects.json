@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Projet 1",
         "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-        "imageUrl": "Portfolio/images/images1.jpg",
+        "imageUrl": "/Portfolio/images/images1.jpg",
         "backgroundImageUrl": "/Portfolio/images/project/booki.png",
         "link": "https://github.com/Wesley971/Booki",
         "skills": "HTML, CSS, Design responsive",
