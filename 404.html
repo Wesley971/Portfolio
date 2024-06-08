@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr"> <!-- Ajout de la langue -->
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajout de la balise viewport -->
-    <title>Page non trouvée</title> <!-- Mise à jour du titre en français -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page non trouvée</title>
     <script>
-        // Préserver les paramètres de requête et les fragments de hachage
-        var hash = window.location.hash;
-        var query = window.location.search;
-        var newPath = '/Portfolio' + window.location.pathname + query + hash;
-        
-        if (newPath !== window.location.pathname + window.location.search + window.location.hash) {
-            window.location.replace(newPath);
+        // Obtenir le chemin actuel
+        var path = window.location.pathname;
+
+        // Rediriger seulement si nous ne sommes pas déjà à la racine du portfolio
+        if (!path.startsWith('/Portfolio')) {
+            var newPath = '/Portfolio' + path;
+            var query = window.location.search;
+            var hash = window.location.hash;
+            window.location.replace(newPath + query + hash);
         } else {
-            // Si le chemin est déjà correct, rediriger vers la racine du portfolio
+            // Si nous sommes déjà dans /Portfolio, rediriger vers la page d'accueil
             window.location.replace('/Portfolio/');
         }
     </script>
 </head>
 <body>
-    <p>Redirection...</p> <!-- Mise à jour du texte en français -->
+    <p>Redirection...</p>
 </body>
 </html>
