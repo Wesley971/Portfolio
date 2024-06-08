@@ -22,9 +22,7 @@ const ContactPage = () => {
                             </div>
                             <button type="submit">Envoyer</button>
                         </form>
-                        <div className="contact-image">
-                            <img src="images/mail.png" alt="Contact" />
-                        </div>
+                        
                     </div>
                 </section>
             </main>

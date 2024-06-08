@@ -6,7 +6,7 @@
     margin: 20px; /* Espacement extérieur pour séparer les cartes */
     transition: transform 0.3s ease; /* Effet de transition pour l'animation */
     text-align: center; /* Centrer le texte */
-    max-width: 25vh; /* Largeur maximale pour garder les cartes uniformes */
+    max-width: 45vh; /* Largeur maximale pour garder les cartes uniformes */
     width: 100%; /* Largeur par défaut */
     flex-grow: 1; /* Permet à la carte de croître pour occuper l'espace disponible */
     flex-basis: calc(33.333% - 40px); /* Largeur de base pour trois cartes par ligne, moins l'espacement */

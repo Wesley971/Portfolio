@@ -32,16 +32,17 @@
   padding: 20px;
   border-radius: 10px;
   height: 45vh;
+  bottom: 35px;
 }
 
 .welcome-section {
   text-align: left;
   color: #D2B0E9;
-  font-family: "Sue Ellen Francisco", cursive;
+  font-family: 'Sue Ellen Francisco', cursive;
   font-weight: 400;
-  font-style: normal;   
+  font-style: normal;
   flex: 1;
-  min-width: 300px;
+  width: 15vh;
   position: relative;
   left: 50px;
 }
@@ -50,10 +51,15 @@
   font-size: 5rem;
   display: inline-block;
   position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.welcome-section h1.loading {
+  opacity: 0;
 }
 
 .welcome-section p {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #555;
   margin-bottom: 40px;
 }
@@ -89,23 +95,21 @@
 
 /* Styles pour la section de présentation */
 .about-section {
-  background-color: #070717; 
+  background-color: #070717;
   padding: 20px 0 200px 0;
   border-radius: 10px;
   margin-top: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    font-family: "LXGW WenKai TC", cursive;
-    font-weight: 700;
-    font-style: normal;
-  
+  font-family: 'LXGW WenKai TC', cursive;
+  font-weight: 700;
+  font-style: normal;
   color: #3B3297;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url('images/Violet.jpg'); /* Remplacez par l'URL de votre image de fond */
+  background-image: url('/images/Violet.jpg'); /* Remplacez par l'URL de votre image de fond */
   background-size: cover;
 }
 
@@ -153,7 +157,13 @@
 @media (min-width: 2256px) {
   .welcome-image img {
     max-width: 50%;
+  }
 }
+@media (max-width: 1440px) {
+  
+  .about-text p {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 1024px) {
   .welcome-section h1 {
@@ -169,7 +179,7 @@
   }
 
   .about-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -183,9 +193,10 @@
     min-width: 100%;
     padding: 0 20px;
   }
+
   .welcome-image img {
     max-width: 50%;
-}
+  }
 
   .welcome-section {
     left: 0;
@@ -247,4 +258,25 @@
   .about-text p {
     font-size: 1rem;
   }
+}
+/* Animation pour masquer le texte */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Animation pour afficher le texte */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Applique l'animation de masquage */
+.welcome-section h1.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+/* Applique l'animation d'affichage */
+.welcome-section h1.fade-in {
+  animation: fadeIn 0.5s forwards;
 }

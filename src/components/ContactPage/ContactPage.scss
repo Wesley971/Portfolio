@@ -1,6 +1,10 @@
 /* Styles pour la page de contact */
 .contact-page {
   background: linear-gradient(135deg, rgba(13, 11, 44, 0.5), rgba(181, 81, 199, 0.5), rgba(59, 50, 151, 0.5));
+  background-image: url('images/mail.png'); /* Remplacez par l'URL de votre image de fond */
+  background-position:center;
+  background-size:contain;
+  background-repeat: no-repeat;
     color: #d2b0e9;
     font-family: "Sue Ellen Francisco", cursive;
     font-weight: 400;
@@ -11,7 +15,8 @@
     flex-direction: column;
     padding: 50px 20px; /* Espacement interne pour donner de l'air au contenu */
     position: relative;
-    top: 25vh; /* Décalage vers le bas pour centrer le contenu */
+    top: 14vh; /* Décalage vers le bas pour centrer le contenu */
+    
   }
   
   .contact-section {
@@ -19,17 +24,19 @@
     max-width: 1200px; /* Augmentation de la largeur maximale */
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    bottom: 50px; /* Décalage vers le haut pour centrer le contenu */
   }
   
   .contact-section h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
   }
   
   .contact-section p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 10px;
     color: white;
   }
   
@@ -48,11 +55,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Espacement entre le formulaire et l'image */
+       /* Espacement entre le formulaire et l'image */
   }
   
   .contact-form {
-    background-color: rgba(59, 50, 151, 0.9); /* Augmentation de l'opacité pour rendre le formulaire plus visible */
+    background-color: rgba(59, 50, 151, 0.5); /* Augmentation de l'opacité pour rendre le formulaire plus visible */
     padding: 40px; /* Augmentation de l'espacement interne */
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre pour un effet de profondeur */
@@ -69,8 +76,10 @@
   
   .form-group label {
     display: block;
+    margin-top: 0;
     margin-bottom: 5px;
-    color: #d2b0e9;
+    color: white;
+    font-size: 2rem;
   }
   
   .form-group input,
