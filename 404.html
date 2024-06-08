@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Ajout de la langue -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajout de la balise viewport -->
+    <meta http-equiv="refresh" content="0; url=/Portfolio/" />
+    <script>
+      // Préserver les paramètres de requête et les fragments de hachage
+      var hash = window.location.hash;
+      var query = window.location.search;
+      var newPath = '/Portfolio' + window.location.pathname + query + hash;
+      
+      if (newPath !== window.location.pathname + window.location.search + window.location.hash) {
+        window.location.replace(newPath);
+      }
+    </script>
+    <title>Page non trouvée</title> <!-- Mise à jour du titre en français -->
+  </head>
+  <body>
+    <p>Redirection...</p> <!-- Mise à jour du texte en français -->
+  </body>
+</html>
