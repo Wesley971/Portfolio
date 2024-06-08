@@ -1,11 +1,6 @@
 /* Styles pour la page de contact */
 .contact-page {
-    background: linear-gradient(
-      135deg,
-      rgba(13, 11, 44, 0.5),
-      rgba(181, 81, 199, 0.5),
-      rgba(59, 50, 151, 0.5)
-    );
+  background: linear-gradient(135deg, rgba(13, 11, 44, 0.5), rgba(181, 81, 199, 0.5), rgba(59, 50, 151, 0.5));
     color: #d2b0e9;
     font-family: "Sue Ellen Francisco", cursive;
     font-weight: 400;
@@ -16,7 +11,7 @@
     flex-direction: column;
     padding: 50px 20px; /* Espacement interne pour donner de l'air au contenu */
     position: relative;
-    top: 300px;
+    top: 25vh; /* Décalage vers le bas pour centrer le contenu */
   }
   
   .contact-section {
