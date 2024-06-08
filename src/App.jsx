@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 
 const App = () => {
     return (
-        <Router basename="/Portfolio">
+        <Router basename="/Portfolio/">
             <div className="content-wrapper">
                 <Header />
                 <main className="main-content">

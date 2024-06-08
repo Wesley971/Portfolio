@@ -7,7 +7,7 @@ const ProjectsPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('/projects.json')
+        fetch('/Portfolio/projects.json')
             .then(response => response.json())
             .then(data => setProjects(data))
             .catch(error => console.error('Error fetching projects:', error));

@@ -84,3 +84,77 @@
 .project-details .skills-label {
     color: #2A1D6A; /* Couleur spécifique pour le label "Compétences" */
 }
+
+/* Media queries pour la réactivité */
+
+/* Pour les écrans de tablettes */
+@media (max-width: 1024px) {
+    .project-details {
+        margin: 150px auto;
+        padding: 20px;
+    }
+    .project-details h2 {
+        font-size: 1.8rem;
+    }
+    .project-details p,
+    .project-details .skills-description {
+        font-size: 1.3rem;
+    }
+    .project-details .project-description {
+        font-size: 1.6rem;
+    }
+    .project-details a {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .project-details {
+        margin: 100px auto;
+        padding: 15px;
+    }
+    .project-details h2 {
+        font-size: 1.5rem;
+    }
+    .project-details img {
+        max-width: 50vh;
+    }
+    .project-details p,
+    .project-details .skills-description {
+        font-size: 1.2rem;
+    }
+    .project-details .project-description {
+        font-size: 1.4rem;
+    }
+    .project-details a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+    .project-details {
+        margin: 50px auto;
+        padding: 10px;
+    }
+    .project-details h2 {
+        font-size: 1.2rem;
+    }
+    .project-details img {
+        max-width: 40vh;
+    }
+    .project-details p,
+    .project-details .skills-description {
+        font-size: 1rem;
+    }
+    .project-details .project-description {
+        font-size: 1.2rem;
+    }
+    .project-details a {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}

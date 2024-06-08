@@ -1,17 +1,25 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-
 const ProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        fetch('/projects.json')
-            .then(response => response.json())
+        fetch('/Portfolio/projects.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
                 const project = data.find(proj => proj.id.toString() === id);
+                if (!project) {
+                    throw new Error(`Project with id ${id} not found`);
+                }
                 setProject(project);
+                console.log(project);
             })
             .catch(error => console.error('Error fetching project details:', error));
     }, [id]);
