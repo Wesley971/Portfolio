@@ -36,7 +36,7 @@ const HomePage = () => {
                             <p>Discover my projects and skills.</p>
                         </section>
                         <div className="welcome-image">
-                            <img src="/images/coding.png" alt="Coding" />
+                            <img src="./images/coding.png" alt="Coding" />
                         </div>
                     </div>
                 </div>
