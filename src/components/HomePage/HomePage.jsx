@@ -36,7 +36,7 @@ const HomePage = () => {
                             <p>Discover my projects and skills.</p>
                         </section>
                         <div className="welcome-image">
-                            <img src="./images/coding.png" alt="Coding" />
+                            <img src="/images/coding.png" alt="Coding" />
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const HomePage = () => {
                             </p>
                         </div>
                         <div className="about-image">
-                            <img src="./images/portrait.webp" alt="About me" />
+                            <img src="/images/portrait.webp" alt="About me" />
                         </div>
                     </div>
                 </section>
