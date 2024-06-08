@@ -27,6 +27,7 @@
     font-style: normal; 
     font-size: 1.4rem; /* Taille de police pour le titre */
     margin: 10px 0; /* Espacement au-dessus et en dessous du titre */
+    color: white; /* Couleur de texte blanche pour un contraste élevé */
 }
 
 .project-card p {
@@ -37,14 +38,14 @@
       
       
     font-size: 1rem; /* Taille de police pour la description */
-    color: #555; /* Couleur de texte grise pour un contraste doux */
+    color: grey; /* Couleur de texte grise pour un contraste doux */
     margin-bottom: 15px; /* Espacement au-dessous de la description */
 }
 
 .project-card a {
     display: inline-block; /* Affichage en ligne pour le lien */
     padding: 10px 20px; /* Espacement intérieur pour le lien */
-    background-color:#FBB7E0; /* Couleur de fond du lien */
+    background-color:#6533BD; /* Couleur de fond du lien */
     color: #fff; /* Couleur de texte du lien */
     border-radius: 5px; /* Coins arrondis pour le lien */
     text-decoration: none; /* Pas de soulignement */
@@ -52,7 +53,7 @@
 }
 
 .project-card a:hover {
-    background-color: #0056b3; /* Changement de couleur au survol */
+    background-color: #CD7DD1; /* Changement de couleur au survol */
 }
 
 .project-card:hover {

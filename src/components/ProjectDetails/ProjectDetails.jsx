@@ -24,9 +24,9 @@ const ProjectDetails = () => {
         <div className="project-details">
             <h2>{project.title}</h2>
             <img src={project.imageUrl} alt={project.title} className="project-details-image" />
-            <p>{project.description}</p>
+            <p className="project-description">{project.description}</p> 
             <p><strong className="skills-label">Compétences :</strong> {project.skills}</p>
-            <p>{project.skillsDescription}</p>
+            <p className="skills-description">{project.skillsDescription}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">Voir le GitHub</a>
         </div>
     );

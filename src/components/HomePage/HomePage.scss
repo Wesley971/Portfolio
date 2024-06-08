@@ -36,7 +36,7 @@
 
 .welcome-section {
   text-align: left;
-  color: #3B3297;
+  color: #D2B0E9;
   font-family: "Sue Ellen Francisco", cursive;
   font-weight: 400;
   font-style: normal;   
@@ -94,9 +94,11 @@
   border-radius: 10px;
   margin-top: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: "Sue Ellen Francisco", cursive; /* Utilisation de la même police pour la cohérence */
-  font-weight: 400;
-  font-style: normal;
+  
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+    font-style: normal;
+  
   color: #3B3297;
   text-align: center;
   display: flex;
@@ -148,6 +150,29 @@
 }
 
 /* Média queries pour la réactivité */
+@media (min-width: 2256px) {
+  .welcome-image img {
+    max-width: 50%;
+}
+}
+@media (max-width: 1024px) {
+  .welcome-section h1 {
+    font-size: 4rem;
+  }
+
+  .welcome-section p {
+    font-size: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .welcome-content {
     flex-direction: column;
@@ -157,5 +182,69 @@
   .welcome-section, .welcome-image {
     min-width: 100%;
     padding: 0 20px;
+  }
+  .welcome-image img {
+    max-width: 50%;
+}
+
+  .welcome-section {
+    left: 0;
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-section p {
+    font-size: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 20px;
+    top: 100px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 10px 0 100px 0;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
   }
 }

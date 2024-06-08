@@ -1,6 +1,10 @@
 
 
 const HomePage = () => {
+
+    const description1 = `Bonjour ! Je suis Wesley Abdoul, un développeur passionné par l'apprentissage de nouvelles technologies. J'aborde mon travail avec rigueur et détermination, combinant technologie et art grâce à une sensibilité artistique prononcée. J'aime relever des défis et créer des solutions innovantes.`;
+    const description2 = `Grâce à mes projets, j'ai acquis des compétences en HTML, CSS, JavaScript et React, ainsi que dans des outils modernes de développement web. J'ai développé des compétences en design responsive, animations CSS, manipulation du DOM et gestion de l'état avec React. Mon parcours m'a également enseigné des techniques essentielles en SEO, optimisation des performances, débogage et refactorisation de code.`;
+    const description3 = `Dans mon portfolio, vous trouverez une sélection de mes projets qui illustrent mes compétences et mon parcours. N'hésitez pas à explorer et à me contacter pour toute question ou opportunité. Je suis toujours ouvert à de nouvelles expériences et à l'apprentissage continu.`;  
     return (
         <div className="homepage">
             <main>
@@ -21,20 +25,14 @@ const HomePage = () => {
                     <div className="about-content">
                         <div className="about-text">
                             <p>
-                                Hello! Im [Your Name], a passionate developer with experience in web development, 
-                                specializing in front-end and back-end technologies. I enjoy creating interactive 
-                                and responsive web applications that provide a seamless user experience.
+                                {description1}
                             </p>
         
                             <p>
-                                I have a strong background in JavaScript, React, Node.js, and other modern web 
-                                development tools. I love learning new technologies and staying up-to-date with 
-                                industry trends to continuously improve my skills.
+                                {description2}
                             </p>
                             <p>
-                                In my portfolio, you will find a selection of my projects that showcase my skills 
-                                and expertise. Feel free to explore and reach out if you have any questions or 
-                                opportunities.
+                               {description3}
                             </p>
                         </div>
                         <div className="about-image">

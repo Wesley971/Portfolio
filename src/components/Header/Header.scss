@@ -1,6 +1,6 @@
 .header {
     background: linear-gradient(135deg,#0D0B2C , #B551C7, #3B3297); 
-    color: rgba(252, 221, 255, 0.9); /* Couleur du texte légèrement transparente */
+    color: #D2B0E9; /* Couleur du texte légèrement transparente */
     padding: 15px 0 15px 0;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@
 }
 
 .header nav ul li a {
-    color: rgba(252, 221, 255, 0.9); /* Couleur du texte légèrement transparente */
+    color: #D2B0E9; /* Couleur du texte légèrement transparente */
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -62,4 +62,68 @@
 
 .header nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Média queries pour la réactivité */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header .logo {
+    font-size: 1.2rem;
+  }
+
+  .header nav ul {
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .header .logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header nav ul li {
+    display: block;
+  }
+
+  .header nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 0;
+  }
+
+  .header .logo {
+    font-size: 1rem;
+  }
+
+  .header nav ul {
+    font-size: 0.9rem;
+  }
+
+  .header nav ul li a {
+    padding: 5px;
+  }
+
+  .header nav ul li a::after {
+    height: 4px;
+  }
 }
