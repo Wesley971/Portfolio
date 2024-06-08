@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 const ProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetch('/Portfolio/projects.json')
@@ -19,10 +20,16 @@ const ProjectDetails = () => {
                     throw new Error(`Project with id ${id} not found`);
                 }
                 setProject(project);
-                console.log(project);
             })
-            .catch(error => console.error('Error fetching project details:', error));
+            .catch(error => {
+                console.error('Error fetching project details:', error);
+                setError(error.message);
+            });
     }, [id]);
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     if (!project) {
         return <div>Loading...</div>;
