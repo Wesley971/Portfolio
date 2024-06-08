@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
-
 const ProjectsPage = () => {
     const [projects, setProjects] = useState([]);
     const navigate = useNavigate();

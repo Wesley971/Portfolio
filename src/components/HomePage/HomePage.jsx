@@ -38,7 +38,7 @@ const HomePage = () => {
                             </p>
                         </div>
                         <div className="about-image">
-                            <img src="/images/portrait.webp" alt="About me" />
+                            <img src="./images/portrait.webp" alt="About me" />
                         </div>
                     </div>
                 </section>

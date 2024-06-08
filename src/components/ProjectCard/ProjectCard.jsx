@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, imageUrl, link, onClick }) => {
                 <h3 className="project-card-title">{title}</h3>
                 <p className="project-card-description">{description}</p>
                 <a className="project-card-link" href={link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    GitHub
+                    Voir le projet
                 </a>
             </div>
         </div>

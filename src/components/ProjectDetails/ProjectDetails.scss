@@ -1,0 +1,69 @@
+.project-details {
+    background: linear-gradient(135deg, rgba(13, 11, 44, 0.5), rgba(181, 81, 199, 0.5), rgba(59, 50, 151, 0.5));
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    padding: 30px; /* Espacement intérieur */
+    margin: 20px auto; /* Espacement extérieur centré */
+    max-width: 85vh; /* Largeur maximale pour garder les détails uniformes */
+    width: 100%; /* Largeur par défaut */
+    text-align: center; /* Centrer le texte */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    color: #fff; /* Couleur de texte blanche pour contraste */
+    position: relative; /* Position relative pour les éléments positionnés absolument */
+    top: 13vh; /* Décalage vers le bas pour centrer le contenu */
+}
+
+.project-details h2 {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2rem; /* Taille de police pour le titre */
+    margin: 20px 0; /* Espacement au-dessus et en dessous du titre */
+}
+
+.project-details img {
+    width: 60%; /* Image prend toute la largeur du conteneur */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 10px; /* Coins légèrement arrondis pour les images */
+    margin: 20px 0; /* Espacement au-dessus et en dessous de l'image */
+}
+
+.project-details p {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; /* Taille de police pour le texte */
+    color: #ddd; /* Couleur de texte gris clair */
+    margin-bottom: 15px; /* Espacement au-dessous du texte */
+}
+
+.project-details .skills {
+    font-weight: bold; /* Texte en gras pour les compétences */
+    color: #fff; /* Couleur de texte blanche */
+    margin-top: 15px; /* Espacement au-dessus des compétences */
+}
+
+.project-details .skills-description {
+    color: grey; /* Couleur de texte gris clair */
+    margin-top: 10px; /* Espacement au-dessus de la description des compétences */
+    font-size: 1rem; /* Taille de police pour la description des compétences */
+}
+
+.project-details a {
+    display: inline-block; /* Affichage en ligne pour le lien */
+    padding: 20px; /* Espacement intérieur pour le lien */
+    background-color: #6533BD; /* Couleur de fond du lien */
+    font-size: 1.2rem; /* Taille de police pour le lien */ 
+    color: #fff; /* Couleur de texte du lien */
+    border-radius: 10px; /* Coins arrondis pour le lien */
+    text-decoration: none; /* Pas de soulignement */
+    transition: background-color 0.5s ease-in-out; /* Effet de transition pour le changement de couleur */
+    margin: 30px 15px 15px 15px; /* Espacement au-dessus du lien */
+    font-family: "Courgette", cursive;
+}
+.project-details a:hover {
+    background-color: #CD7DD1; /* Changement de couleur au survol */
+}
+.project-details .skills-label {
+    color: #3B3297; /* Couleur spécifique pour le label "Compétences" */
+}

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
+import './ProjectDetails.scss';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -25,7 +25,9 @@ const ProjectDetails = () => {
             <h2>{project.title}</h2>
             <img src={project.imageUrl} alt={project.title} className="project-details-image" />
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            <p><strong className="skills-label">Compétences :</strong> {project.skills}</p>
+            <p>{project.skillsDescription}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">Voir le GitHub</a>
         </div>
     );
 };
