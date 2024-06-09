@@ -107,7 +107,7 @@
 @media (max-width: 480px) {
 .header {
   padding: 5px 0;
-  position: fixed; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
+  position: relative; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
   top: 0;
 }
 

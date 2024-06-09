@@ -220,6 +220,9 @@
     width: 100%;
     margin-left: 0;
   }
+  .about-image {
+     margin-top: 20px;
+  }
 
   .about-text {
     text-align: center;
@@ -237,11 +240,14 @@
   }
 
   .welcome-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .welcome-section p {
     font-size: 1rem;
+  }
+  .welcome-image img {
+    max-width: 100%;
   }
 
   .about-section {
