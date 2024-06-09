@@ -68,7 +68,7 @@
 }
 
 .welcome-image img {
-  max-width: 65%;
+  width: 65%;
   height: auto;
   border-radius: 10px;
 }
@@ -184,6 +184,7 @@
   .welcome-content {
     flex-direction: column;
     text-align: center;
+    bottom: 15vh;
   }
 
   .welcome-section, .welcome-image {
@@ -192,7 +193,7 @@
   }
 
   .welcome-image img {
-    max-width: 50%;
+    width: 50%;
   }
 
   .welcome-section {
@@ -237,18 +238,17 @@
   .welcome-container {
     padding: 20px;
     top: 100px;
+    
   }
 
   .welcome-section h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .welcome-section p {
     font-size: 1rem;
   }
-  .welcome-image img {
-    max-width: 100%;
-  }
+  
 
   .about-section {
     padding: 10px 0 100px 0;
