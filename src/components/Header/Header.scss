@@ -1,129 +1,135 @@
 .header {
-    background: linear-gradient(135deg,#0D0B2C , #B551C7, #3B3297); 
-    color: #D2B0E9; /* Couleur du texte légèrement transparente */
-    padding: 15px 0 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Vibur", cursive;
-    font-weight: 400;
-    font-style: normal;
-    position: fixed; /* Fixer le header en haut */
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
-    transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
-    opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
+  background: linear-gradient(135deg,#0D0B2C , #B551C7, #3B3297); 
+  color: #D2B0E9; /* Couleur du texte légèrement transparente */
+  padding: 15px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Vibur", cursive;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed; /* Fixer le header en haut */
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+  transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
+  opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
 }
 
 .header:hover {
-    opacity: 0.6; /* Opacité à 100% lorsque le header est survolé */
+  opacity: 0.6; /* Opacité à 100% lorsque le header est survolé */
 }
 
 .header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
 }
 
 .header nav ul li {
-    display: inline;
+  display: inline;
 }
 
 .header nav ul li a {
-    color: #D2B0E9; /* Couleur du texte légèrement transparente */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-    font-family: "Vibur", cursive;
-    position: relative;
+  color: #D2B0E9; /* Couleur du texte légèrement transparente */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  font-family: "Vibur", cursive;
+  position: relative;
 }
 
 .header nav ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 8px;
-    width: 0;
-    background-color: #D2B0E9; /* Couleur de la ligne */
-    transition: width 0.3s ease-in-out;
-    border-radius: 25px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  width: 0;
+  background-color: #D2B0E9; /* Couleur de la ligne */
+  transition: width 0.3s ease-in-out;
+  border-radius: 25px;
 }
 
 .header nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* Média queries pour la réactivité */
 @media (max-width: 1024px) {
-  .header {
-    padding: 10px 0;
-  }
+.header {
+  padding: 10px 0;
+}
 
-  .header .logo {
-    font-size: 1.2rem;
-  }
+.header .logo {
+  font-size: 1.2rem;
+}
 
-  .header nav ul {
-    gap: 0.5rem;
-    font-size: 1.1rem;
-  }
+.header nav ul {
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 10px 0;
-  }
+.header {
+  flex-direction: column;
+  padding: 10px 0;
+}
 
-  .header .logo {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
+.header .logo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
 
-  .header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
+.header nav ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  .header nav ul li {
-    display: block;
-  }
+.header nav ul li {
+  display: block;
+}
 
-  .header nav ul li a {
-    font-size: 1rem;
-  }
+.header nav ul li a {
+  font-size: 1rem;
+}
+
+/* Désactiver la transition d'opacité sur les petits écrans */
+.header {
+  transition: none;
+  opacity: 1; /* Opacité à 100% */
+}
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding: 5px 0;
-  }
+.header {
+  padding: 5px 0;
+}
 
-  .header .logo {
-    font-size: 1rem;
-  }
+.header .logo {
+  font-size: 1rem;
+}
 
-  .header nav ul {
-    font-size: 0.9rem;
-  }
+.header nav ul {
+  font-size: 0.9rem;
+}
 
-  .header nav ul li a {
-    padding: 5px;
-  }
+.header nav ul li a {
+  padding: 5px;
+}
 
-  .header nav ul li a::after {
-    height: 4px;
-  }
+.header nav ul li a::after {
+  height: 4px;
+}
 }
