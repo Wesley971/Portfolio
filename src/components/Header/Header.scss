@@ -8,9 +8,7 @@
   font-family: "Vibur", cursive;
   font-weight: 400;
   font-style: normal;
-  position: fixed; /* Fixer le header en haut */
   width: 100%;
-  top: 0;
   z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
   transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
   opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
@@ -104,17 +102,13 @@
 .header nav ul li a {
   font-size: 1rem;
 }
-
-/* Désactiver la transition d'opacité sur les petits écrans */
-.header {
-  transition: none;
-  opacity: 1; /* Opacité à 100% */
-}
 }
 
 @media (max-width: 480px) {
 .header {
   padding: 5px 0;
+  position: fixed; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
+  top: 0;
 }
 
 .header .logo {

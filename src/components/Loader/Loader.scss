@@ -1,129 +1,58 @@
-.header {
-    background: linear-gradient(135deg,#0D0B2C , #B551C7, #3B3297); 
-    color: #D2B0E9; /* Couleur du texte légèrement transparente */
-    padding: 15px 0 15px 0;
+.loader-container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    font-family: "Vibur", cursive;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .loader {
+    width: 25em; /* Increased size */
+    height: 25em; /* Increased size */
+    background: linear-gradient(135deg, rgba(13, 11, 44, 0.5), rgba(181, 81, 199, 0.5), rgba(59, 50, 151, 0.5));
+    animation: spin 3s infinite;
+    position: relative; /* Add relative positioning for the before element */
+  }
+  
+  .loader::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 11, 44, 0.5), rgba(181, 81, 199, 0.5), rgba(59, 50, 151, 0.5));
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      transform: rotate(-360deg);
+      border-radius: 50%;
+    }
+  
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .welcome-message {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 10;
+    
+    font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    width: 100%;
-    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
-    transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
-    opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
-}
-
-.header:hover {
-    opacity: 0.6; /* Opacité à 100% lorsque le header est survolé */
-}
-
-.header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
-}
-
-.header nav ul li {
-    display: inline;
-}
-
-.header nav ul li a {
-    color: #D2B0E9; /* Couleur du texte légèrement transparente */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-    font-family: "Vibur", cursive;
-    position: relative;
-}
-
-.header nav ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 8px;
-    width: 0;
-    background-color: #D2B0E9; /* Couleur de la ligne */
-    transition: width 0.3s ease-in-out;
-    border-radius: 25px;
-}
-
-.header nav ul li a:hover::after {
-    width: 100%;
-}
-
-/* Média queries pour la réactivité */
-@media (max-width: 1024px) {
-  .header {
-    padding: 10px 0;
+      
+      
   }
-
-  .header .logo {
-    font-size: 1.2rem;
-  }
-
-  .header nav ul {
-    gap: 0.5rem;
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  .header .logo {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  .header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .header nav ul li {
-    display: block;
-  }
-
-  .header nav ul li a {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    padding: 5px 0;
-    position: absolute; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
-    top: 0;
-  }
-
-  .header .logo {
-    font-size: 1rem;
-  }
-
-  .header nav ul {
-    font-size: 0.9rem;
-  }
-
-  .header nav ul li a {
-    padding: 5px;
-  }
-
-  .header nav ul li a::after {
-    height: 4px;
-  }
-}
+  
