@@ -22,7 +22,7 @@ const App = () => {
     return (
         <Router basename="/Portfolio/">
             <div className="content-wrapper">
-                <Header />
+                {!loading && <Header />}
                 <main className="main-content">
                     {loading ? (
                         <Loader />
@@ -35,7 +35,7 @@ const App = () => {
                         </Routes>
                     )}
                 </main>
-                <Footer />
+                {!loading && <Footer />}
             </div>
         </Router>
     );
