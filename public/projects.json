@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Projet 1",
+        "title": "Booki",
         "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/Booki",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "title": "Projet 2",
+        "title": "OhMyfood",
         "description": "Améliorez l'interface d'un site mobile avec des animations CSS",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/OhMyfood",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "title": "Projet 3",
+        "title": "Sophie Bluel",
         "description": "Créez une page web dynamique avec JavaScript",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/Sophie-Bluel",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "title": "Projet 4",
+        "title": "Kasa",
         "description": "Créez une application web de location immobilière avec React",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/Kasa",
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "title": "Projet 5",
+        "title": "Nina Cardocci",
         "description": "Optimisez le référencement d'un site de photographe",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/P-9-Nina",
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "title": "Projet 6",
+        "title": "724events",
         "description": "Débuggez le site d'une agence d'événementiel",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/P-10-724events",
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "title": "Projet 7",
+        "title": "Bank Argent",
         "description": "Implémentez le front-end d'une application bancaire avec React",
         "imageUrl": "/Portfolio/images/image1.png",
         "link": "https://github.com/Wesley971/P-11-Bank-Argent",

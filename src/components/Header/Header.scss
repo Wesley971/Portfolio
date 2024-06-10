@@ -9,6 +9,8 @@
   font-weight: 400;
   font-style: normal;
   width: 100%;
+  position: fixed;
+  top: 0;
   z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
   transition: background 0.3s ease, opacity 0.3s ease; /* Transition pour le changement d'opacité */
   opacity: 0.3; /* Opacité initiale pour donner un effet transparent */
@@ -83,6 +85,7 @@
   flex-direction: column;
   padding: 10px 0;
   opacity: 0.7; /* Assurez-vous que le header reste opaque pour les mobiles */
+  position: relative;
 }
 
 .header .logo {
@@ -111,8 +114,8 @@
 @media (max-width: 480px) {
 .header {
   padding: 5px 0;
-  position: relative; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
-  top: 0;
+  position: fixed; /* Assurez-vous que le header reste fixé en haut pour les mobiles */
+  position: relative;
 }
 
 .header .logo {
@@ -125,6 +128,8 @@
 
 .header nav ul li a {
   padding: 5px;
+  opacity: 1;
+  color: white;
 }
 
 .header nav ul li a::after {
