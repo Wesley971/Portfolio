@@ -5,7 +5,7 @@ const ContactPage = () => {
             <main>
                 <section className="contact-section">
                     <h2>Me contacter</h2>
-                    <p>Vous pouvez me contacter par email à <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+                    <p>Vous pouvez me contacter par email à <a href="mailto:abdoulwes@gmail.com">abdoulwes@gmail.com</a>.</p>
                     <div className="contact-content">
                         <form className="contact-form">
                             <div className="form-group">
