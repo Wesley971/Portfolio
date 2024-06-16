@@ -20,3 +20,10 @@
       width: 90%; /* Largeur de la grille */
   }
   }
+
+  @media screen and (max-width: 768px) {
+    .projects-section {
+      padding: 0 ;
+     
+    }
+  }
